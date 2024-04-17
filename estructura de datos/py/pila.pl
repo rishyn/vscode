@@ -1,0 +1,29 @@
+% Variacion de los numeros encontrados en la pila
+
+pila([]).
+
+apilar(elemento, pila, [elemento|pila]).
+
+desapilar([elemento|pila], elemento, pila).
+
+verPila(pila):- (pila is [], write('Pila vacia') ; pila is [cabeza | cola], verPila(cola), write(cabeza), nl).
+
+es_vacia(pila):- pila is [], write('True').
+
+largo(pila, largo):- length(pila, largo).
+
+suma(pila, suma):- sum_list(pila, suma).
+
+media(pila, media):- suma is suma(pila), largo is largo(pila), media is suma/largo.
+sumaAlCuadrado(pila, sumaAlCuadrado):- maplist(menosMediaAlCuadrado, pila, SumaCuadrados), sumaAlCuadrado is sum_list(SumaCuadrados, Suma).
+menosMediaAlCuadrado(numero, menosMediaAlCuadrado):- media is media(pila), resta is (numero - media)**2.
+
+varianza(pila, varianza):- suma is sumaAlCuadrado(pila)/largo(pila).
+
+
+
+
+
+
+
+

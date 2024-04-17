@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "cstdlib": "c",
+        "typeinfo": "c",
+        "stdio.h": "c",
+        "Pilas_colas1.C": "cpp",
+        "Pilas_colas2.C": "cpp",
+        "pilas1.C": "cpp",
+        "pilas2.C": "cpp",
+        "colas.C": "cpp",
+        "pilaC.C": "cpp",
+        "exeperimento.C": "cpp"
+    }
+}

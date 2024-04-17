@@ -1,0 +1,57 @@
+#!/urs/bin/python
+#-*- coding: utf-8 -*-
+#Nombre Autor: Ricardo Yañez
+
+#Bibliotecas importadas
+import math
+import re
+#Declaración de funciones
+def lectura(nombre):
+    ar = open(nombre)
+    numeros = []
+    for elem in ar:
+        linea = elem.strip('\n')
+        numeros.append(linea)
+    ar.close()
+    return numeros
+
+def Anum(nombre):
+    lista = lectura(nombre) #lista de cadenas del txt
+    nu = []
+    for elem in lista:
+        elevados = []
+        elem = list(re.sub(r"\s+", "",elem)) #quito los espacios y transformo a lista el elemento
+        j = 0
+        k = 0
+        cantidad = len(elem)/2
+
+        while j < cantidad:
+            nro1 = ((int(elem[k]))**(int(elem[k+1])))#transformo de factor a numero de 2 en 2
+            k += 2
+            j += 1
+            elevados.append(nro1)
+        multi = math.prod(elevados)#multiplico los elementos de la lista
+        nu.append(multi)
+    return nu
+
+
+def divi(nombre):
+    lista = Anum(nombre)
+    cantidad = len(lista)/2
+    cocientes = []
+    k = 0
+    j = 0
+    while j < cantidad :
+        nro = lista[k]/lista[k+1]
+        cocientes.append(nro)
+        j += 1
+        k += 2
+    return cocientes
+
+#def enteros():
+    pass
+
+#codigo principal
+if __name__ == '__main__':
+    i = divi('primos.txt')
+    print(i)

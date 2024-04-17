@@ -1,0 +1,5 @@
+podemos redondear los numeros en c con %.2f 2 dependiendo de cuantos decimales queremos que se vean
+
+para guardar string se ocupa %s y la variable no es necesario el &
+con   gets(x) se guarda todo eld ato completo por que el otro detecta espacio y se corta
+

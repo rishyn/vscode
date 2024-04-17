@@ -1,0 +1,211 @@
+Por que el sistema chileno es tan deficiente?
+el sistema educativo es deficiente para los estudiantes
+
+
+
+Argumentos para sustentar la posicion
+-resultados academicos y aprendisaje defisiente
+-escaza implementacion de politica inovadora(buscar yo)
+-reconocimiento nulo de la cultura general de lo indigena
+-sistema curricular mal implementado en ensenansa media y basica(buscar yo)
+
+Tienes que venderle tu alma a la u, para que ella te deje terminar.
+
+seba y yo resumen del punto 4:
+La propuesta presentada recientemente a la mejora por el ministro de educacion
+esta centrada en la gratuidad y mejoramiento de la educacion publica pero pasa
+desapersivido el curriculum, se habla de calidad de educacion cuando la que se
+entrega a lasa escuelas cumple con los bojetivos trazados para ella y con lo que las
+sociedad les pide, en Chile establece los objetivos de la educacion para todos
+esto orienta en la labor desempen~ada por los docentes contra las cuales se desarrolla
+las mediciones estandarizadas dando diferentes resultados entre la educacion publica
+y la privada.
+
+No obstante pese a su imporatancia la dicuscion sobre el curriculum no trasiende
+la opinion publica ni es materia de preocupacion solamente se le hace importancia 
+cuando se toca con otros intereses como por ejemplo el intento de la reduccion
+de las horas de historia dentro del plan de estudio en en general los principales 
+actores de educativos del Pais se mantiene en silencio antes los cambios del curriculum
+y el acto que este conlleva.
+
+Durante los ultimos 20 an~os se a realizado un esfuerzo permanente por la realizacion
+de un curriculum competitivo a nivel nacional que posibilite el desarrollo , informacion 
+de ciudadanos, las complejidades son muchas, el transito de las reformas desde mediados
+de los 90 no a sido facil se comenzo modificando los ejes curriculares para pasar
+desde el foco de la ensen~nza hacia el del aprendizaje con un fuerte enfasis en los
+conosimientos transmitidos.
+
+Desde a prinsipios del siglo XXI se avanza lentamente hacie un modelo curricular
+ligado al desarrollo de competencias para que los estudiantes pudieran hacer efectivos
+los conocimientos y no solo acumularlos 
+
+
+
+
+
+
+
+
+
+
+
+LO DE INGLES:
+https://www.bbc.com/mundo/noticias-50246831
+Cómo la inteligencia artificial podría destruirnos por accidente:
+La inteligencia no tiene conciencia por si misma ya que fue anteriormente programada,
+y tampoco va a empezar a razonar de un dia para otro , pero porque se dice que 
+"la IA nos podria destruir , un dia de estos",bueno en si esta idea se pudo haber
+originado de las peliculas de hollywood , y te digo que te quedes tranquilo ,bueno
+un poco JEJE ya que el verdadero causante de que los robots nos puedan destruir 
+es por nosotros mismos , PERO por que? , la resumida conclusion a la que llego
+Stuart Russell, profesor en la Universidad de California en Berkeley, que en si los robots 
+nos podrian destruir por que nosotros le podriamos indicar ordenes mal espesificadas ,
+como indica el profesor :
+
+Imagina que tenemos un poderoso sistema de IA que es capaz de controlar el clima del planeta
+y que queremos usarlo para devolver los niveles de CO2 en nuestra atmósfera a la época preindustrial.
+
+"El sistema descubre que la forma más fácil de hacerlo es deshacerse de todos los seres humanos, porque
+ellos son los que están produciendo todo este dióxido de carbono en primer lugar", dijo Russell.
+
+"Y podrías decir, bueno, puedes hacer lo que quieras, pero no puedes deshacerte de los seres humanos. 
+Entonces ¿qué hace el sistema? Simplemente nos convence de tener menos hijos hasta que no queden seres humanos".
+
+
+una posible solucion :"No sabemos lo que queremos"
+Según Russell, dar a la inteligencia artificial objetivos más definidos no es la solución para este dilema, porque
+los humanos mismos no estamos seguros de cuáles son esas metas.
+
+"No sabemos que algo no nos gusta hasta que sucede", dice.
+
+"Deberíamos cambiar toda la base sobre la cual construimos sistemas de IA", dice, alejándose de la noción de dar a 
+los robots objetivos fijos.
+
+"En cambio, el sistema tiene que saber que desconoce cuál es el objetivo".
+
+"Y una vez que tienes sistemas que funcionan de esa manera, realmente serán diferentes a los seres humanos. 
+Comenzarán a pedir permiso antes de hacer las cosas, porque no estarán seguros de si eso es lo que quieres".
+
+
+
+
+
+
+https://elpais.com/tecnologia/2017/06/21/actualidad/1498036655_438636.html
+Máquinas y robots nos quitan el empleo, pero mejoran nuestras vidas
+En 1948, Norbert Wiener, ya advirtio del conflicto entre tecnologia y empleo
+,Paul Mason decia que en 30 a~no "el 50% de los trabajadores desaparecerian
+y seran automatizados.la informatica se aplica a todo pero destruye,pero 
+destruye mas empleo del que crea.Cientos de profesionales ven cada dia
+como sus trabajos son realizados por robots o por empresas.
+pero no todo es malo ya que si tomamos el ejemplo:
+de que los profesores suban el video de sus clases los alumnos lo podrian repasar
+cuantas veces quieran y si implementamos otros mecanismo informaticos 
+conllevarian que con menos profesores se podria atender a una mayor cantida d de
+alumos.
+
+
+La solucion paraque no pase esto:El valor del ser humano
+tal vez si reducimos el número de horas que un humano puede trabajar, entonces, 
+el trabajo humano tendría más valor.
+Nadie debería quejarse de que las máquinas trabajen, si lo hacen mejor, más barato, 
+sin cansarse y disponibles a cualquier hora, pero tenemos que establecer mecanismos 
+para que esas ventajas generen beneficios para todos y nos permita una sociedad más
+equitativa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+El consumo de energia en los centros de datos y servicios en la nube
+
+El estudio realizado por la direccion general de redes de comunicacion 
+en 2018 los centros de datos (DC)representan el 2.7%  del consumo de 
+energia en europa, y si esto sigue , en 2025 se espera que los DC consuman 
+21% de la energia en europa, pero se quieren presentar soluciones para que 
+esto no pase o porlomenos  no superemos el 12 %.
+sin embargo aparecen mas aplicaciones que requieren de computo mas grandes
+como la IA o la mineria de criptomonedas y ahora con la aparicion del 5G
+se espera una subida en la demanda energetica de los CD.
+
+
+algunas soluciones
+sistemas de refrigeracion mas eficientes 
+uso de energias verdes
+contruccion de CD en regiones con climas frios
+mejorar la eficiencia del software
+reutilizacion del calor (e.g. para la generacion de energia)
+entre otras soluciones
+
+
+
+
+
+
+
+
+
+
+
+
+Por qué la inteligencia artificial puede ser racista y machista y 
+cómo puede evitarse:
+se prepara para un futuro en el que las calles estaran llenas de camaras
+capaces de reconocer nuestros rostros y recabar informacion sobre nosotros
+se qeuire implementar eso para poder reconocer cuando una persona esta a punto
+de hacer un crimen y poder detenerlo a tiempo pero se prepara el algoritmo
+para uqe pueda predecir quien puede ser delincuente y quien no pero eso
+lo decidira la etica de quein lo alla programado ,por ejemplo si la maquina
+detecta que personas afroamericanas comenten crimenes y estan en cierto sector
+tu por el solo hecho de vivir en ese sector ,seras mal visto ya que se analizo
+que en esa sona hay delincuentes.
+
+
+solucion: intentar de que el algoritmo razone por que una persona es propensa
+a delinquir no solo con datos recopilados por zona o color de raza sino por
+mas acciones y en este caso se tendria que agudizar la programacion de la camara
+para que sea mas precisa a la hora de decidir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
