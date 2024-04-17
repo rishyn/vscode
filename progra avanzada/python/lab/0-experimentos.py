@@ -22,8 +22,8 @@ if __name__ == "__main__":
     largo = int(input("Ingrese el largo de la lista "))
 
     while i < largo+1:
-        print("Ingrese el numero N°",i)
-        numero = int(input())
+        print("Ingrese el numero N°",i,":")
+
 
 
 
