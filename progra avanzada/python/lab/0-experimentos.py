@@ -12,7 +12,7 @@ escribir ejercisio a resolver
 if __name__ == "__main__":
 
 
-
+    #probando
     arr = []
 
     i = 1
