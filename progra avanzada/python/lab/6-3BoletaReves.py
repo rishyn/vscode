@@ -14,14 +14,6 @@ def boleta(net):
     return lis
 
 
-
-
-
-
-
-
-
-
 neto = int(input("Por favor ingrese el valor neto de la boleta: "))
 
 datos = boleta(neto)
