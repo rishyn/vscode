@@ -1,5 +1,5 @@
 class Pallet:
-    def _init_(self, id_pallet, peso_caja, peso_maximo=400):
+    def __init__(self, id_pallet, peso_caja, peso_maximo=400):
         self.id_pallet = id_pallet
         self.peso_caja = peso_caja
         self.peso_maximo = peso_maximo
@@ -38,22 +38,22 @@ class Pallet:
 
 
 class PalletA(Pallet):
-    def _init_(self, id_pallet):
-        super()._init_(id_pallet, peso_caja=5)
+    def __init__(self, id_pallet):
+        super().__init__(id_pallet, peso_caja=5)
 
 
 class PalletB(Pallet):
-    def _init_(self, id_pallet):
-        super()._init_(id_pallet, peso_caja=10)
+    def __init__(self, id_pallet):
+        super().__init__(id_pallet, peso_caja=10)
 
 
 class PalletC(Pallet):
-    def _init_(self, id_pallet):
-        super()._init_(id_pallet, peso_caja=20)
+    def __init__(self, id_pallet):
+        super().__init__(id_pallet, peso_caja=20)
 
 
 class Bodega:
-    def _init_(self):
+    def __init__(self):
         self.pallets = []
         self.ubicaciones = {"00": []}
 
