@@ -74,5 +74,5 @@ class Terricola(Guerrero): # Hereda de la clase Guerrero
 
         self._comprobar_muerte()
 
-  def __str__(self):
-    return f"Terricola {self._vivo} con {self._salud} de salud"
+    def __str__(self):
+        return f"Terricola {self._vivo} con {self._salud} de salud"
