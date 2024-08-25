@@ -76,3 +76,69 @@ class Terricola(Guerrero): # Hereda de la clase Guerrero
 
     def __str__(self):
         return f"Terricola {self._vivo} con {self._salud} de salud"
+
+
+class Nave:
+    """Clase que define el comportamiento de una nave."""
+    def __init__(self, cant_tripulantes, tipo_equipo: TipoEquipo):
+        self._cant_tripulantes = cant_tripulantes
+        self._tipo_equipo = tipo_equipo # Tipo de equipo de la nave (Marciano o Terricola), se usa Enum por simplicidad
+        self._destruida = False
+        self._tripulacion = self._inicializa_tripulacion()
+
+    @property
+    def tipo_equipo(self):
+        """Devuelve el tipo de equipo de la nave."""
+        return self._tipo_equipo
+
+    @property
+    def esta_destruida(self):
+        """Devuelve si la nave está destruida."""
+        return self._destruida
+
+    @property
+    def tripulantes_vivos(self):
+        """Devuelve la cantidad de tripulantes vivos que quedan."""
+        t_vivos = 0
+        for t in self._tripulacion:
+            if t.esta_vivo:
+                t_vivos += 1
+
+        return t_vivos
+
+    def _inicializa_tripulacion(self):
+        """
+            Inicializa la tripulación de la nave en función del tipo de equipo y la cantidad de tripulantes.
+
+            Returns:
+                Lista de tripulantes.
+        """
+        if self._tipo_equipo == TipoEquipo.Marciano:
+            return [Marciano(random.randint(7,10)) for _ in range(self._cant_tripulantes)]  # Para una ejecucion mas realista los marcianos se crean con una resistencia variada
+        else:
+            return [Terricola(random.randint(3,5)) for _ in range(self._cant_tripulantes)]  # Para una ejecucion mas realista los terricolas se crean con una salud variada
+
+    def recibir_disparo(self, disparo: int): # De esta clase solo se debía definir este método
+        """
+            Recibe un disparo, notifica a todos sus tripulantes y actualiza el estado de la nave.
+
+            Args:
+                disparo: Número del disparo recibido.
+        """
+        flag_vivo = False
+        for t in self._tripulacion:
+            if t.esta_vivo:
+                t.recibir_disparo(disparo)
+
+            if t.esta_vivo:
+                flag_vivo = True
+
+        if not flag_vivo:
+            print(f"Nave del equipo {self._tipo_equipo.value} destruida")
+            self._destruida = True
+        else:
+            print(f"Quedan {self.tripulantes_vivos} en la nave")
+
+    def disparar(self):
+        """Realiza un disparo generando un aleatorio entre 0 y 9."""
+        return random.randint(0,9)
