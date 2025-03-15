@@ -40,7 +40,10 @@ class Pallet:
 class PalletA(Pallet):
     def __init__(self, id_pallet):
         super().__init__(id_pallet, peso_caja=5)
+##<<<<<<< HEAD
 
+##=======
+##>>>>>>> 68d73688e67c6ba6676b828c29364ab14f99dbba
 
 
 class PalletB(Pallet):
