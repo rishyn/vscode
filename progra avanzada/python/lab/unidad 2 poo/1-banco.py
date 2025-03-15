@@ -39,15 +39,12 @@ def main():
         menu()
         opcion = input(">>")
         if opcion == "1":
-            
+            pass
 
 
 
-    pass
 
-
-if __name__  == "__main__":
+if __name__ == "__main__":
 
     main()
-
     pass
