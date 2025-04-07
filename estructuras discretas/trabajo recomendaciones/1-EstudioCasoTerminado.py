@@ -15,7 +15,7 @@ def abreratings():
         user_id = int(row["userId"])
         movie_id = int(row["movieId"])
         rating = row["rating"]
-        
+
         # Guardamos las tuplas (movie_id, rating) para cada user_id
         if user_id not in dicc:
             dicc[user_id] = []
@@ -63,3 +63,4 @@ if __name__ == "__main__":
         print(recomendaciones[n])
         n+=1
     print(f"El resultado de la métrica de Jaccard es: {calcular_jaccard(set(dic_calificaciones),set(dic_peliculas))}")
+
