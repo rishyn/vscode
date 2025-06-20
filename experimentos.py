@@ -1,18 +1,23 @@
 
 print("\nEl monto minimo es de 500")
-print("Mood ENTEL")
 cargar = 500
 
-objetivo= int(input("\nIngrese el objetivo a llegar: "))
+objetivo = int(input("\nIngrese el objetivo a llegar: "))
+bonus_carga = int(input("\nIngrese el bonus de recarga %: "))
 monto = 500
 while (monto < objetivo):
+
     print("\nEl monto a cargar sera: ",cargar)
 
 
-    C_total = ((cargar * 120) // 100)
-    print("\nEl monto total cargado es: ",C_total)
+    bonus = ((cargar * bonus_carga) / 100)
+    C_total = cargar + bonus
+    print("\nEl monto total cargado es: ",C_total,"con un ",bonus_carga,"% de bonus de carga.")
     monto = C_total
-    cargar +=10
+    cargar +=1
+
+#print("\nEl monto a cargar sera: ",cargar)
+#print("\nEl monto total cargado es: ",C_total,"con un ",bonus_carga,"% de bonus de carga.")
 
 
 
