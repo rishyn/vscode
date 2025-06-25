@@ -8,13 +8,17 @@ monto = 500
 while (monto < objetivo):
 
     print("\nEl monto a cargar sera: ",cargar)
+    if(bonus_carga > 0):
 
-
-    bonus = ((cargar * bonus_carga) / 100)
-    C_total = cargar + bonus
-    print("\nEl monto total cargado es: ",C_total,"con un ",bonus_carga,"% de bonus de carga.")
-    monto = C_total
-    cargar +=1
+        bonus = ((cargar * bonus_carga) / 100)
+        C_total = cargar + bonus
+        print("\nEl monto total cargado es: ",C_total,"con un ",bonus_carga,"% de bonus de carga.")
+        monto = C_total
+        cargar +=1
+    else:
+        print("\nEl monto total cargado es: ",cargar)
+        monto = cargar
+        cargar +=1
 
 #print("\nEl monto a cargar sera: ",cargar)
 #print("\nEl monto total cargado es: ",C_total,"con un ",bonus_carga,"% de bonus de carga.")
