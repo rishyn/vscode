@@ -1,12 +1,11 @@
 
-n1 = 4.2
-n2 = 6
-n3 = 3.4
+n1 = float(input("\nIngrese la primera nota: "))
+n2 = 1.3
+n3 = 5.5
 
-n4 = float(input("\nIngrese la cuarta nota: "))
 
-prom = (n1 + n2 + n3 + n4)/4
+prom = round((n1 + n2 + n3)/3,3)
 
-print("\nLas notas son: ",n1,",",n2,",",n3,",",n4)
+print("\nLas notas son: ",n1,",",n2,",",n3)
 print("\ny el promedio es: ",prom)
 
