@@ -1,0 +1,188 @@
+--  Desafio 1 -- 
+
+/* La empresa “LMLA" (dueña de la tabla LMLA_PRODUCTOS) va a lanzar su nueva tienda online. El equipo de logística ha definido el sistema de inventario.
+
+Se ha decidido que los primeros 99 códigos (del 1 al 99) se reservarán para "Productos Especiales" y "Kits de Ofertas" que se crearán manualmente en el futuro.
+
+Por lo tanto, el inventario de productos normales debe comenzar a registrarse a partir del código 100.
+
+La empresa estima que lanzará la tienda con un catálogo inicial de 200 productos.
+
+Proyectan agregar aproximadamente 150 nuevas líneas de productos cada año durante los próximos 5 años. */
+
+100 + 200 + 150 * 5 = 300 + 750 = 1050 1500
+
+CREATE SEQUENCE LMLA_PK_PRODUCTOS_S
+    START WITH 100
+    INCREMENT BY 1
+    MINVALUE 100
+    MAXVALUE 1500
+    CACHE 200
+    NOCYCLE;
+
+
+-- Desafio 2 -- 
+
+
+/* - Agregar campo EMAIL a la tabla USUARIO.
+
+- Crear una función que genere el correo: 2
+primeras letras del nombre + 2 del 1er
+apellido + '.' + 2º apellido + '@testsql.cl'.
+
+- Modificar el procedimiento de carga para
+usar la función del correo.
+
+- Limpiar la tabla y probar la carga de un
+registro. */
+
+CREATE TABLE LMLA_USUARIO(
+	COD_USUARIO NUMBER,
+	NOMBRE_USUARIO VARCHAR2(25),
+	APELLIDO1_USUARIO VARCHAR2(25),
+	APELLIDO2_USUARIO VARCHAR2(25),
+	CONSTRAINT PK_LMLA_USUARIO PRIMARY KEY(COD_USUARIO)
+);
+
+ALTER TABLE LMLA_USUARIO
+    ADD (EMAIL VARCHAR(50)); 
+
+CREATE OR REPLACE FUNCTION LMLA_GENERA_CORREO(
+    NOMBRE_USUARIO_F VARCHAR2,
+    APELLIDO1_USUARIO_F VARCHAR2,
+    APELLIDO2_USUARIO_F VARCHAR2
+)
+    RETURN VARCHAR2
+IS
+    CORREO VARCHAR2(50) := '';
+begin
+    CORREO :=  CONCAT(UPPER(SUBSTR(NOMBRE_USUARIO_F,1,2)),CONCAT(UPPER(SUBSTR(APELLIDO1_USUARIO_F,3,2)),CONCAT('.',CONCAT(UPPER(APELLIDO2_USUARIO_F),UPPER('@TESTSQL,CL')))));
+    RETURN CORREO;
+end;
+
+CREATE OR REPLACE PROCEDURE LMLA_CARGA_USUARIOS(
+	COD_USUARIO NUMBER,
+	NOMBRE_USUARIO_P VARCHAR2,
+	APELLIDO1_USUARIO_P VARCHAR2,
+	APELLIDO2_USUARIO_P VARCHAR2
+)
+IS
+	CORREO VARCHAR2(50):='';
+BEGIN
+	LOCK TABLE LMLA_USUARIO IN ROW EXCLUSIVE MODE;
+    CORREO := LMLA_GENERA_CORREO(NOMBRE_USUARIO_P,APELLIDO1_USUARIO_P,APELLIDO2_USUARIO_P);
+	INSERT INTO LMLA_USUARIO(COD_USUARIO, NOMBRE_USUARIO, APELLIDO1_USUARIO, APELLIDO2_USUARIO,EMAIL)
+	VALUES(COD_USUARIO, NOMBRE_USUARIO_P, APELLIDO1_USUARIO_P, APELLIDO2_USUARIO_P,CORREO);
+	COMMIT;
+	EXCEPTION
+		WHEN PROGRAM_ERROR THEN
+			RAISE_APPLICATION_ERROR(-6501,'ERROR INTERNO DEL PROGRAMA');
+		WHEN OTHERS THEN
+			RAISE_APPLICATION_ERROR(-20010,'UPSI FALLÉ =()');
+		ROLLBACK;
+END;
+
+DELETE FROM LMLA_USUARIO;
+
+begin
+    LMLA_CARGA_USUARIOS(1,'JUAN','ROJAS','ROJAS');
+end;
+
+
+
+-- Desafio 3 -- 
+
+/* - Crear una función que genere la clave
+primaria automáticamente.
+
+- Modificar el procedimiento almacenado para
+usar esa función.
+
+- Limpiar la tabla y cargar 10 registros.
+*/
+
+CREATE OR REPLACE FUNCTION LMLA_PK_PRODUCTOS
+RETURN NUMBER
+IS
+    CLAVE_PRIMARIA NUMBER:= 0;
+BEGIN
+    SELECT NVL(MAX(ID_PRODUCTO)+1,1) INTO CLAVE_PRIMARIA
+    FROM LMLA_PRODUCTOS;
+    RETURN CLAVE_PRIMARIA;
+END;
+
+CREATE OR REPLACE PROCEDURE LMLA_CREAR_PRODUCTOS(
+    NOMBRE_PRODUCTO_P VARCHAR2,
+    TIPO_PRODUCTO_P VARCHAR2,
+    PRECIO_PRODUCTO_P NUMBER
+)
+IS
+BEGIN
+    LOCK TABLE LMLA_USUARIO IN ROW EXCLUSIVE MODE;
+    insert into LMLA_PRODUCTOS (ID_PRODUCTO,NOMBRE_PRODUCTO,TIPO_PRODUCTO,PRECIO_PRODUCTO)
+    values (LMLA_PK_PRODUCTOS,NOMBRE_PRODUCTO_P,TIPO_PRODUCTO_P,PRECIO_PRODUCTO_P);
+    COMMIT;
+    exception
+      when OTHERS then
+        raise_application_error(-20010, 'ERROR NO IDENTIFICADO');
+    ROLLBACK;
+END;
+
+BEGIN
+	LMLA_CREAR_PRODUCTOS('OMO','DETERGENTE',3000);
+	LMLA_CREAR_PRODUCTOS('MR MUSCULO','DESENGRASANTE',1000);
+END;
+
+-- Desafio 4 --
+
+/* - Modificar la tabla productos para agregarle una variable que se llame iva y que sea del tipo number
+
+- Crear una función que genere el valor del iva del producto de la tabla productos
+
+- Modificar el procedimiento almacenado para usar esa función.
+
+- Limpiar la tabla y cargar 10 registros.
+
+*/
+
+
+ALTER TABLE LMLA_PRODUCTOS
+    ADD (IVA NUMBER);
+
+
+CREATE OR REPLACE FUNCTION LMLA_IVA_PRODUCTO(PRECIO_PRODUCTO_F NUMBER)
+RETURN NUMBER
+IS 
+    IVA NUMBER := 0;
+begin
+    IVA := PRECIO_PRODUCTO_F * 0.19;
+    RETURN IVA;
+end;
+
+CREATE OR REPLACE PROCEDURE LMLA_CREAR_PRODUCTOS(
+    NOMBRE_PRODUCTO_P VARCHAR2,
+    TIPO_PRODUCTO_P VARCHAR2,
+    PRECIO_PRODUCTO_P NUMBER
+)
+IS
+BEGIN
+    LOCK TABLE LMLA_USUARIO IN ROW EXCLUSIVE MODE;
+    insert into LMLA_PRODUCTOS(ID_PRODUCTO,NOMBRE_PRODUCTO,TIPO_PRODUCTO,PRECIO_PRODUCTO, IVA)
+    values (LMLA_PK_PRODUCTOS,NOMBRE_PRODUCTO_P,TIPO_PRODUCTO_P,PRECIO_PRODUCTO_P, LMLA_IVA_PRODUCTO(PRECIO_PRODUCTO_P));
+    COMMIT;
+    exception
+      when OTHERS then
+        raise_application_error(-20010, 'ERROR NO IDENTIFICADO');
+    ROLLBACK;
+END;
+
+DELETE FROM LMLA_PRODUCTOS;
+
+BEGIN
+	LMLA_CREAR_PRODUCTOS('MAGISTRAL','LAVALOZA',5000);
+	LMLA_CREAR_PRODUCTOS('QUIX','LAVALOZA',2000);
+	LMLA_CREAR_PRODUCTOS('RINSO','DETERGENTE',2500);
+	LMLA_CREAR_PRODUCTOS('OMO','DETERGENTE',3000);
+	LMLA_CREAR_PRODUCTOS('MR MUSCULO','DESENGRASANTE',1000);
+END;
+
