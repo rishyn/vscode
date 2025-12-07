@@ -1,14 +1,13 @@
 --  Desafio 1 -- 
 
-/* La empresa “LMLA" (dueña de la tabla LMLA_PRODUCTOS) va a lanzar su nueva tienda online. El equipo de logística ha definido el sistema de inventario.
-
-Se ha decidido que los primeros 99 códigos (del 1 al 99) se reservarán para "Productos Especiales" y "Kits de Ofertas" que se crearán manualmente en el futuro.
-
+/* La empresa “LMLA" (dueña de la tabla LMLA_PRODUCTOS) va a lanzar su nueva tienda online. El equipo de 
+logística ha definido el sistema de inventario.
+Se ha decidido que los primeros 99 códigos (del 1 al 99) se reservarán para "Productos Especiales" 
+y "Kits de Ofertas" que se crearán manualmente en el futuro.
 Por lo tanto, el inventario de productos normales debe comenzar a registrarse a partir del código 100.
-
 La empresa estima que lanzará la tienda con un catálogo inicial de 200 productos.
-
-Proyectan agregar aproximadamente 150 nuevas líneas de productos cada año durante los próximos 5 años. */
+Proyectan agregar aproximadamente 150 nuevas líneas de productos cada año durante los próximos 
+5 años. */
 
 100 + 200 + 150 * 5 = 300 + 750 = 1050 1500
 
