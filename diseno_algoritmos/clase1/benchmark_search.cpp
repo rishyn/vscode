@@ -9,7 +9,7 @@ static void BM_LinearSearchModern(benchmark::State& state) {
     std::vector<int> data(size);
     std::iota(data.begin(), data.end(), 0);
     int key = size - 1; // Worst case: search for the last element
-    
+
     for (auto _ : state) {
         auto result = modern_cpp::linear_search(data, key);
         benchmark::DoNotOptimize(result);
