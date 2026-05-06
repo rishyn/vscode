@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/strassen_matrix_multiplication.dir/link.d CMakeFiles/strassen_matrix_multiplication.dir/strassen_matrix_multiplication.cpp.o -o strassen_matrix_multiplication

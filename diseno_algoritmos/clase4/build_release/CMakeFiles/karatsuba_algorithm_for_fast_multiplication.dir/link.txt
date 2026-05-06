@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/karatsuba_algorithm_for_fast_multiplication.dir/link.d CMakeFiles/karatsuba_algorithm_for_fast_multiplication.dir/karatsuba_algorithm_for_fast_multiplication.cpp.o -o karatsuba_algorithm_for_fast_multiplication

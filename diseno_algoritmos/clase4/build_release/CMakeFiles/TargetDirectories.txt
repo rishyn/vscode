@@ -1,0 +1,11 @@
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/benchmark_matrix_multiplication.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/benchmark_matrix_multiplication_bm.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/karatsuba_algorithm_for_fast_multiplication.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/strassen_flat_matrix.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/strassen_matrix_multiplication.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/edit_cache.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/rebuild_cache.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/list_install_components.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/install.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/install/local.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase4/build_release/CMakeFiles/install/strip.dir

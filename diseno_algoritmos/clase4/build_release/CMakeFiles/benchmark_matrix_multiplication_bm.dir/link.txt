@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/benchmark_matrix_multiplication_bm.dir/link.d CMakeFiles/benchmark_matrix_multiplication_bm.dir/benchmark_matrix_multiplication_bm.cpp.o -o benchmark_matrix_multiplication_bm  /usr/lib/libbenchmark.so.1.9.5 -lpthread
