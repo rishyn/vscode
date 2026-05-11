@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/gale_shapley.dir/link.d CMakeFiles/gale_shapley.dir/gale_shapley.cpp.o -o gale_shapley

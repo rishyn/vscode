@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/kruskals_minimum_spanning_tree.dir/link.d CMakeFiles/kruskals_minimum_spanning_tree.dir/kruskals_minimum_spanning_tree.cpp.o -o kruskals_minimum_spanning_tree

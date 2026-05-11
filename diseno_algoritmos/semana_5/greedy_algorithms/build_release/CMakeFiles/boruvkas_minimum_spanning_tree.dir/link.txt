@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/boruvkas_minimum_spanning_tree.dir/link.d CMakeFiles/boruvkas_minimum_spanning_tree.dir/boruvkas_minimum_spanning_tree.cpp.o -o boruvkas_minimum_spanning_tree

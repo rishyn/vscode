@@ -1,0 +1,16 @@
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/binary_addition.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/boruvkas_minimum_spanning_tree.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/digit_separation.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/dijkstra_greedy.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/gale_shapley.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/huffman.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/jump_game.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/knapsack.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/kruskals_minimum_spanning_tree.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/prims_minimum_spanning_tree.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/edit_cache.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/rebuild_cache.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/list_install_components.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/install.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/install/local.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/semana_5/greedy_algorithms/build_release/CMakeFiles/install/strip.dir

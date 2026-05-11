@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/digit_separation.dir/link.d CMakeFiles/digit_separation.dir/digit_separation.cpp.o -o digit_separation

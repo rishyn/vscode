@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/prims_minimum_spanning_tree.dir/link.d CMakeFiles/prims_minimum_spanning_tree.dir/prims_minimum_spanning_tree.cpp.o -o prims_minimum_spanning_tree

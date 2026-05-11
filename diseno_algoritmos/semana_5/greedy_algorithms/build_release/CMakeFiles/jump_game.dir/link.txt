@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/jump_game.dir/link.d CMakeFiles/jump_game.dir/jump_game.cpp.o -o jump_game
