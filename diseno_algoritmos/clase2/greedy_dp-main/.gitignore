@@ -1,0 +1,52 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+build/
+# CMake
+CMakeFiles/ 
+.vscode/
+CMakeCache.txt
+CMakeOutput.log 
+cmake_install.cmake
+custom_sort
+graph.dot
+graph.svg
+heap_sort
+knapsack_dp
+knapsack_heap
+knapsack_test
+Makefile
+shortest_path
+shortest_path_negative_weight
+shortest_path_floyd_warshall
+shortest_path_floyd_warshall
