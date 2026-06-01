@@ -1,0 +1,4 @@
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase6/build/CMakeFiles/benchmark_kruskal.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase6/build/CMakeFiles/kruskal_demo.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase6/build/CMakeFiles/edit_cache.dir
+/home/hayamitaka/Escritorio/vscode/diseno_algoritmos/clase6/build/CMakeFiles/rebuild_cache.dir
